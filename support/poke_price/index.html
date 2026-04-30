@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support &mdash; TCG Price Tracker</title>
+<style>
+  :root {
+    --bg: #FAF6F0;
+    --surface: #FFFFFF;
+    --text: #2A2A2A;
+    --muted: #6B6B6B;
+    --accent: #5BAA8C;
+    --border: #E8E2D6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    font-weight: 700;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 36px 0 12px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  p, ul { font-size: 16px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+  a:hover { border-bottom-color: var(--accent); }
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .contact-card strong {
+    display: block;
+    font-size: 14px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  .faq-item .q {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Support</h1>
+      <p class="meta">TCG Price Tracker &middot; Last updated: April 30, 2026</p>
+    </header>
+
+    <p>
+      Thank you for using our app. If you have any questions, feedback, or
+      run into a problem, we are happy to help.
+    </p>
+
+    <h2>Contact Us</h2>
+    <div class="contact-card">
+      <strong>Email</strong>
+      <a href="mailto:dosnivy1015@gmail.com">dosnivy1015@gmail.com</a>
+    </div>
+    <p>
+      We aim to respond within 24&ndash;48 hours. When reporting a bug, please
+      include your device model, iOS version, and a brief description of what
+      you were doing when the issue occurred.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <p class="q">Where do prices come from?</p>
+      <p>
+        Prices are sourced from public market data via the
+        <a href="https://www.pricecharting.com/" target="_blank" rel="noopener">PriceCharting</a>
+        API. Values are estimates of the current secondary-market price for
+        ungraded and PSA-graded cards in USD, and are converted to other
+        currencies using daily exchange rates.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">How often are prices updated?</p>
+      <p>
+        Prices are refreshed automatically when you open a card, with cached
+        values served first for speed and a background update applied if the
+        cache is older than 24 hours.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">Why can I not find a specific card?</p>
+      <p>
+        The app searches the public card database. Some recently released or
+        regional-only cards may not yet be indexed. Try searching by the card
+        name only, or by card number.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">Why is a price showing as $0 or missing?</p>
+      <p>
+        For very rare cards, brand-new releases, or low-volume cards, market
+        data may not yet be available. Prices return as soon as enough sales
+        data exists.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">How do I clear my favorites or search history?</p>
+      <p>
+        Open the Favorites tab and swipe a card to delete it. Search history
+        and recently viewed cards can be cleared from the Home screen using
+        the &ldquo;Clear&rdquo; button next to each section.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">Is my data shared?</p>
+      <p>
+        No. The app does not collect or transmit any personal information.
+        All your data (favorites, search history) stays on your device.
+        See our <a href="../../privacy/poke_price/">Privacy Policy</a> for details.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q">Does the app work offline?</p>
+      <p>
+        Cards you have already viewed are cached and viewable offline. New
+        searches and price refreshes require an internet connection.
+      </p>
+    </div>
+
+    <h2>Bug Reports &amp; Feature Requests</h2>
+    <p>
+      We welcome your feedback. If you have an idea for a feature, or want to
+      report a bug, please email us at the address above with as much detail
+      as possible.
+    </p>
+
+    <footer>
+      &copy; 2026 &middot;
+      <a href="../../privacy/poke_price/">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
